@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="portfolio">
+    <nav id="menu" class="panel">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Who I am</a></li>
+            <li><a href="portfolio.html">Things I made</a></li>
+            <li><a href="process.html">How I made them</a></li>
+            <li><a href="contact.html">Talk to me!</a></li>
+        </ul>
+        <ul class="socialmedia">
+            <li><a href="#"><img src="img/socialmedia-01.png" alt=""></a></li>
+            <li><a href="#"><img src="img/socialmedia-02.png" alt=""></a></li>
+            <li><a href="#"><img src="img/socialmedia-03.png" alt=""></a></li>
+            <li><a href="#"><img src="img/socialmedia-04.png" alt=""></a></li>
+            <li><a href="#"><img src="img/socialmedia-05.png" alt=""></a></li>
+         </ul>
+    </nav>
+        <a href="#menu" class="menu-link"><img src="img/navicon.png" alt=""></a> 
+        <h1 class="header">Sara.</h1>
+    <div class="wrap push">
+        <div class="portfolio-container">
+        <h1>I DON'T JUST MAKE THINGS PRETTY.</h1>
+        <h1>I RESEARCH, ORGANIZE, PROBLEM SOLVE,</h1>
+        <h1>& MOST IMPORTANTLY, I CRAFT EXPERIENCES.</h1>
+
+        <div class="project-container">
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="http://placehold.it/350x250"></a>
+                <div class="img-title">
+                    <h4>Fine Art by Barb</h4>
+                    <h5>Web Design & Development</h5>
+                </div>
+            </div>
+
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="http://placehold.it/350x250"></a>
+                <div class="img-title">
+                    <h4>JA - Wedding</h4>
+                    <h5>Invitation Design</h5>
+                </div>
+            </div>
+
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="img/03_01.jpg"></a>
+                <div class="img-title">
+                    <h4>Tenji Sushi</h4>
+                    <h5>Web Design & Development</h5>
+                </div>
+            </div>
+
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="http://placehold.it/350x250"></a>
+                <div class="img-title">
+                    <h4>The Coffee Shops</h4>
+                    <h5>Web Design & Development</h5>
+                </div>
+            </div>
+
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="http://placehold.it/350x250"></a>
+                <div class="img-title">
+                    <h4>VCD Survival Kit</h4>
+                    <h5>Branding & Packaging</h5>
+                </div>
+            </div>
+
+            <div class="projects">
+                <a href="http://placehold.it/600x1200" class="open-lightbox"><img src="http://placehold.it/350x250"></a>
+                <div class="img-title">
+                    <h4>Weinand's Worth</h4>
+                    <h5>Branding & Packaging</h5>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+
+
+        $(document).ready( function() {
+    $('.img-title').ready(function(){
+        $('.img-title').hide()
+});
+
+    $('.projects').hover( function() {
+        $(this).find('.img-title').fadeIn(300);
+    }, function() {
+        $(this).find('.img-title').fadeOut(100);
+    });
+    
+});
+
+
+//lightbox
+
+(function($) {
+  
+  // Build lightbox
+  $('.open-lightbox').on('click', function(e) {
+    e.preventDefault();
+    var image = $(this).attr('href');
+    $('html').addClass('no-scroll');
+    $('body').append('<div class="lightbox"><img src="' + image + '">');
+  });
+  
+  // Close lightbox
+    $('body').on('click', '.lightbox', function() {
+    $('html').removeClass('no-scroll');
+    $('.lightbox').remove();
+  });
+  
+})(jQuery);
+
+    </script>
+    </body>
+</html>

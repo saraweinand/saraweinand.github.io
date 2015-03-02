@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="process">
+        <nav id="menu" class="panel">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Who I am</a></li>
+                <li><a href="portfolio.html">Things I made</a></li>
+                <li><a href="process.html">How I made them</a></li>
+                <li><a href="contact.html">Talk to me!</a></li>
+            </ul>
+            <ul class="socialmedia">
+                <li><a href="#"><img src="img/socialmedia-01.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-02.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-03.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-04.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-05.png" alt=""></a></li>
+             </ul>
+        </nav>
+        <a href="#menu" class="menu-link"><img src="img/navicon.png" alt=""></a> 
+        <h1 class="header">Sara.</h1>
+
+        <div class="wrap push">
+            <div class="aboutme-container">
+                <h1>My Process</h1>
+                <h2>How I design & why</h2>
+            </div>
+            <div class="aboutme">
+                    <p>Every designer has a process, mine is pretty typical interjected with copius amounts of coffee. My ideas never come to me when I sit down and try to come up with ideas. My creativity usually sparks when I'm trying to go to bed, washing dishes, or when i'm driving. As a result, I keep a moleskin on me at all times! I do most of my concepting and designing on paper.</p>
+            </div>
+            <div class="myprocess">
+                <div class="processlist">
+                    <h4>1: Creative Brief</h4>
+                    <p>The first part of the process is getting the conversation started. I do this by learning the plans of your business, what you hope to achieve, and what your personal styles are.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="processlist">
+                    <h4>2: Gather Research</h4>
+                    <p>The researching phase is one of the most important! In order to jump into a project, I have to gather as much information that is prevellent to you and your company. Researching also involves gathering visual ideas and creating a mood board to extablish a feel of the product before it is produced.</p>
+                </div>
+                <div class="processlist">
+                    <h4>3: Sketch & Concept</h4>
+                    <p>This is where my beloved paper comes into play! Long before I open my computer to put a project together, I sketch pages on pages to come up with new and fresh ideas. The first few sketches always seem to be the same, so I push my self past my "comfort zone" to break the rules and craft something new!</p>
+                </div>
+                <div class="clear"></div>
+                <div class="processlist">
+                    <h4>4: Development</h4>
+                    <p>This is when I decide what tools are going to be the best for the job. There is never a go to program to finish a design. In this phase I also keep in mind what the FINAL result is going to be.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="processlist">
+                    <h4>5: Review & Revise</h4>
+                    <p>This phase is single handedly the most important phase of the project. You first design is never final. Input, critique, and edits are crucial to any piece of work. Fresh eyes will catch small mistakes you wouldn't normally catch on your own.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="processlist">
+                    <h4>6: Finalize</h4>
+                    <p>Everybody's favorite part! I apply the final details, finish producing the product, or send if off to the appropriate party for final production.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+
+
+        $(document).ready( function() {
+    $('.img-title').ready(function(){
+        $('.img-title').hide()
+});
+
+    $('.projects').hover( function() {
+        $(this).find('.img-title').fadeIn(300);
+    }, function() {
+        $(this).find('.img-title').fadeOut(100);
+    });
+    
+});
+    </script>
+    </body>
+</html>
