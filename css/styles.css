@@ -6,8 +6,11 @@
 }
 
 body.index {
-    background: url(../img/blurrybg.jpg);
+    background: url(../img/deskbw.jpg);
     background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 body {
@@ -18,8 +21,13 @@ body {
     line-height: 1.5;
 }
 
+.index .home-container img {
+    width: 30%;
+    margin: 19% 0 0 25%;
+}
 
-.bg-overlay {
+
+/*.bg-overlay {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +40,7 @@ body {
     z-index: -10;
     margin-top: -.5em;
 
-}
+}*/
 
 
 
@@ -44,7 +52,7 @@ body {
 }
 
 .panel {
-    background: #aabbb6;
+    background: #98999a;
 }
 
 .panel a {
@@ -66,21 +74,6 @@ nav a {
 
 nav a:hover {
     color: #98999a;
-}
-
-.socialmedia {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.socialmedia li {
-    display: inline-block;
-
-}
-
-.socialmedia img {
-    width: 2em;
 }
 
 
@@ -147,201 +140,184 @@ a.menu-link {
 
 /* about */
 
-body.about {
+/*body.about {
     background: url(../img/900x400.gif);
     background-color: #e3e4e5;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-}
+    background-size: 50% 100vh;
+    background-position: fixed;
+}*/
 
 .no-scroll {
   overflow: hidden;
 }
 
-.aboutme-container {
-    margin-top: 10%;
-    display: block;
+.section_img {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+.section_img img {
     width: 100%;
+    overflow: hidden;
+}
+
+.aboutme-container {
+    display: block;
+    width: 55%;
+    float: right;
+    background: rgba(255,255,255,.7);
+    margin: -5% 0 5% 0;
+    padding-left: 5%;
+    position: relative;
 }
 
 .aboutme-container h1,
 .aboutme-container h2 {
     text-transform: uppercase;
-    text-align: center;
-    color: white;
-    text-shadow: .5px .5px 2px rgba(0, 0, 0, .2);
+    text-align: left;
+    color: #444444;
 }
 
 .aboutme-container h1 {
-    font-size: 5em;
     margin-top: 20%;
+    font-size: 2.5em;
     margin-bottom: 0;
 
 }
 
 .aboutme-container h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2em;
-    margin: 0 0 20% 0;
+    margin: 0 0 2% 0;
 }
 
 .aboutme-container h3 {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 1.5em;
+    margin: 0;
 }
 
 .aboutme {
-    text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     padding-bottom: .5em;
-}
-
-.details {
-    display: inline-block;
-    width: 30%;
-    padding: 1%;
-    margin: 0 auto;
-}
-
-/* process */
-
-body.process {
-    background: url(../img/900x400.gif);
-    background-color: #e3e4e5;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-.myprocess {
-    margin-top: 5%;
-}
-
-.processlist {
-    display: block;
-    margin: 0 auto;
-    float: left;
-    width: 100%;
-}
-
-.processlist h4 {
-    display: inline-block;
-    width: 25%;
-    float: left;
-    margin-top: 0;
-}
-
-.processlist p {
-    display: inline-block;
-    width: 75%;
-    float: right;
-    margin-top: 0;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    margin-bottom: 10%;
 }
 
 
-/* contact */
-
-body.contact {
-    background: url(../img/1000x300.gif);
-    background-color: #e3e4e5;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-.contact {
-    position: relative;
+.details p {
     display: block;
     width: 100%;
+    margin: 0 auto;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    margin-bottom: 5%;
+}
 
+
+.section_img {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+.section_img img {
+    width: 100%;
+    overflow: hidden;
 }
 
 .contact-container {
-    margin-top: 5%;
     display: block;
-    width: 100%;
-    text-align: center;
+    width: 55%;
+    height: 105vh;
+    float: right;
+    background: rgba(255,255,255,.7);
+    margin-top: -5%;
+    padding-left: 5%;
+    position: relative;
 }
-
-
 
 .contact-container h1,
 .contact-container h2 {
     text-transform: uppercase;
-    text-align: center;
-    color: white;
-    text-shadow: .5px .5px 2px rgba(0, 0, 0, .2);
+    text-align: left;
+    color: #444444;
 }
 
 .contact-container h1 {
-    margin-top: 10%;
-    font-size: 5em;
+    margin-top: 20%;
+    font-size: 2.5em;
     margin-bottom: 0;
 
 }
 
 .contact-container h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2em;
-    margin: 0 0 5% 0;
-    padding-bottom: 5%;
+    margin: 0 0 2% 0;
 }
 
 .contact-container h3 {
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1.5em;
     margin: 0;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 300;
 }
 
-.contact-container h4 {
-    text-transform: uppercase;
-    font-weight: 300;
+.aboutme {
     text-align: left;
-
+    padding-bottom: .5em;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    margin-bottom: 10%;
 }
 
-.contact-container .socialmedia {
-    position: relative;
+
+.details p {
+    display: block;
     width: 100%;
-    margin: -.5em 0 0 -3em;
-    float: left;
-    text-align: left;
+    margin: 0 auto;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    margin-bottom: 5%;
 }
 
-.contact-container .socialmedia img {
-    height: 2em;
-    width: 2em;
-    margin: auto .25em;
-}
-
-.information {
-    display: inline-block;
-    width: 60%;
+.socialmedia {
+    width: 100%;
+    margin: -11% 0 0 -6.5%;
     float: left;
 
-    margin-top: 5%;
 }
 
-.resume {
+.socialmedia li {
     display: inline-block;
-    width: 40%;
-    float: right;
-    margin-top: 7%;
-    text-transform: uppercase;
+
 }
 
-.resume a {
-    text-decoration: none;
-    padding: 1em 3em;
-    border: 1px solid black;
-    color: black;
+.socialmedia img {
+    width: 3em;
 }
 
-.resume a:hover {
-    color: #fff;
-    background: #000;
+.socialmedia a:hover {
+    opacity: .7;
 }
 
 
@@ -349,73 +325,107 @@ body.contact {
 /* portfolio */
 
 body.portfolio {
-    background: #e3e4e5;
+    background: #fff;
     color: #101820;
     line-height: 1.5;
 }
 
 .portfolio .header {
     color: #444444;
+    text-shadow: none;
 }
 
 .portfolio-container {
-    width: 100%;
-    margin: 10% auto -5% auto;
+    display: inline-block;
+    width: 25%;
+    float: left;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 5% 0 0 5%;
+    z-index: -99;
 }
 
 .portfolio-container h1 {
-    text-align: center;
-    margin: -.25em 0 0 0;
+    text-transform: uppercase;
     color: #444444;
-    font-size: 2.25em;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 2.5em;
 }
 
-.project-container {
-    width: 100%;
-    margin: 10% auto;
+.portfolio-container ul {
+    list-style: none;
 }
 
+.portfolio-container a {
+    text-decoration: none;
+    color: #000;
+}
 
-.projects {
-    display: inline-block;
-    margin: 0 auto;
-    width: 33.1%;
-    text-align: left;
+.projectnav {
+    margin: 0;
+}
+
+.gallery {
+    background: rgba(255,255,255,.7);
+    float: right;
+    width: 80%;
+    margin: -2% -13.2% 0 0;
+    padding-left: 2%;
     position: relative;
+    z-index: -80;
 }
 
-.projects img {
+.gallery li {
+    list-style: none;
+    position: relative;
+    -webkit-filter: brightness(.8);
+    margin-top: -1em;
+}
+
+.gallery li:hover {
+    -webkit-filter: brightness(1);
+}
+
+.gallery img {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
+.gallery li a {
+    text-decoration: none;
+    color: #000;
 
-.projects h4 {
-    margin: .25em 0 0 0;
-    font-weight: 400;
-    font-size: 2em;
 }
 
-.projects h5 {
-    margin-top: .25em;
-    font-weight: 100;
-    font-size: 1em;
-}
-
-.img-title {
+.title {
+    width: 100%;
+    padding-top: 13%;
     position: absolute;
-    width: 100%;
     top: 0;
-    margin-top: 20%;
     text-align: center;
-    color: white;
+    cursor: pointer;
+
+}
+
+.title h4,
+.title h5 {
+    text-align: center;
+}
+
+.title h4 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.title h5 {
+    margin: 0;
+    font-size: 1.25em;
 }
 
 
-
-
-// No Background Scroll
 
 
 

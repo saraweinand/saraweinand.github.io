@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Tinos:400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body class="portfolio">
+        <nav id="menu" class="panel">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Who I am</a></li>
+                <li><a href="portfolio.html">Things I've made</a></li>
+                <li><a href="contact.html">Talk to me!</a></li>
+            </ul>
+            <ul class="socialmedia">
+                <li><a href="#"><img src="img/socialmedia-01.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-02.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-03.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-04.png" alt=""></a></li>
+                <li><a href="#"><img src="img/socialmedia-05.png" alt=""></a></li>
+             </ul>
+        </nav>
+        <a href="#menu" class="menu-link"><img src="../img/navicon-gray.png" alt=""></a> 
+        <h1 class="header">Sara.</h1>
+
+        <div class="wrap push">
+            <div class="gallery">
+                <img src="http://placehold.it/900x400" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor quaerat tenetur. Accusantium numquam magni reprehenderit quasi tenetur, consectetur labore, laborum, excepturi quo quidem, sunt ullam ipsa in quod nesciunt.</p>
+                <img src="http://placehold.it/900x700" alt="">
+                <h3>Wire Frames</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor quaerat tenetur. Accusantium numquam magni reprehenderit quasi tenetur, consectetur labore, laborum, excepturi quo quidem, sunt ullam ipsa in quod nesciunt.</p>
+
+                <img src="http://placehold.it/900x1100" alt="">
+                <h3>Strategy & Concept</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor quaerat tenetur. Accusantium numquam magni reprehenderit quasi tenetur, consectetur labore, laborum, excepturi quo quidem, sunt ullam ipsa in quod nesciunt.</p>
+            </div>
+            <div class="portfolio-container">
+                <h1>Project #1</h1>
+                <a href="">Demo</a>
+                <div class="aboutme">
+                    <p> About the project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sed tenetur rem temporibus culpa, omnis sint soluta et eaque neque. Beatae consequuntur reiciendis dolores, explicabo quibusdam sapiente ex tenetur ducimus. </p>
+
+                    <a href="../portfolio.html"><--Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+
+
+        $(document).ready( function() {
+    $('.img-title').ready(function(){
+        $('.img-title').hide()
+});
+
+    $('.projects').hover( function() {
+        $(this).find('.img-title').fadeIn(300);
+    }, function() {
+        $(this).find('.img-title').fadeOut(100);
+    });
+    
+});
+    </script>
+    </body>
+</html>
